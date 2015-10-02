@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TimeLineTableViewCell" customModule="SwiftTwitter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="-1" width="600" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Fi-ts-yt0">
+                    <rect key="frame" x="56" y="117" width="536" height="25"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fQ-gU-5wH">
+                            <rect key="frame" x="8" y="0.0" width="20" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="zwf-PX-n7I"/>
+                            </constraints>
+                            <state key="normal" image="reply_grey">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="replyClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="zbi-8L-bEC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NjV-8V-7C7">
+                            <rect key="frame" x="58" y="0.0" width="20" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="gQr-Wf-GXn"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="retweet_grey">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="retweetClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="PnM-aK-VeF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsw-Xb-Ddh">
+                            <rect key="frame" x="136" y="3" width="20" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="8Xv-H7-MfA"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="favorite_grey">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="favouriteClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jje-hd-n5z"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTE-B1-Iit">
+                            <rect key="frame" x="86" y="0.0" width="20" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="SzL-kA-NBu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="v8Z-oU-LRY">
+                            <rect key="frame" x="164" y="0.0" width="20" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="X7F-Y8-pTW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="1fQ-gU-5wH" firstAttribute="top" secondItem="5Fi-ts-yt0" secondAttribute="top" id="2xi-hv-5t1"/>
+                        <constraint firstAttribute="bottom" secondItem="1fQ-gU-5wH" secondAttribute="bottom" id="8Nr-9d-Q0f"/>
+                        <constraint firstItem="v8Z-oU-LRY" firstAttribute="leading" secondItem="nsw-Xb-Ddh" secondAttribute="trailing" constant="8" id="Bvx-CI-JfW"/>
+                        <constraint firstItem="1fQ-gU-5wH" firstAttribute="leading" secondItem="5Fi-ts-yt0" secondAttribute="leading" constant="8" id="CcU-FM-tHv"/>
+                        <constraint firstItem="nsw-Xb-Ddh" firstAttribute="top" secondItem="5Fi-ts-yt0" secondAttribute="top" constant="3" id="FR9-4C-InP"/>
+                        <constraint firstItem="v8Z-oU-LRY" firstAttribute="top" secondItem="5Fi-ts-yt0" secondAttribute="top" id="K2J-fh-eMo"/>
+                        <constraint firstItem="NjV-8V-7C7" firstAttribute="top" secondItem="5Fi-ts-yt0" secondAttribute="top" id="VBt-Is-jay"/>
+                        <constraint firstAttribute="bottom" secondItem="xTE-B1-Iit" secondAttribute="bottom" id="Vyq-k8-1qE"/>
+                        <constraint firstAttribute="bottom" secondItem="NjV-8V-7C7" secondAttribute="bottom" id="bgG-yT-VHW"/>
+                        <constraint firstAttribute="height" priority="999" constant="25" id="maH-24-eOR"/>
+                        <constraint firstItem="NjV-8V-7C7" firstAttribute="leading" secondItem="1fQ-gU-5wH" secondAttribute="trailing" constant="30" id="pB5-wE-ul9"/>
+                        <constraint firstAttribute="bottom" secondItem="nsw-Xb-Ddh" secondAttribute="bottom" constant="3" id="pRw-KT-VmM"/>
+                        <constraint firstAttribute="bottom" secondItem="v8Z-oU-LRY" secondAttribute="bottom" id="rxX-bz-ifv"/>
+                        <constraint firstItem="xTE-B1-Iit" firstAttribute="leading" secondItem="NjV-8V-7C7" secondAttribute="trailing" constant="8" id="sxB-zn-TPM"/>
+                        <constraint firstItem="nsw-Xb-Ddh" firstAttribute="leading" secondItem="xTE-B1-Iit" secondAttribute="trailing" constant="30" id="y80-V4-WGO"/>
+                        <constraint firstItem="xTE-B1-Iit" firstAttribute="top" secondItem="5Fi-ts-yt0" secondAttribute="top" id="zwJ-Xy-FqW"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mpR-is-nNq">
+                    <rect key="frame" x="8" y="8" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="MdZ-rf-XWM"/>
+                        <constraint firstAttribute="width" constant="40" id="Ulh-78-Ibp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxH-gu-8ej">
+                    <rect key="frame" x="56" y="8" width="30.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWf-zF-Xno">
+                    <rect key="frame" x="95" y="8" width="30.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.32727667297979801" green="0.32727667297979801" blue="0.32727667297979801" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oez-YH-l2y">
+                    <rect key="frame" x="492" y="8" width="100" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="lud-0U-jaE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.32727667300000002" green="0.32727667300000002" blue="0.32727667300000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ez2-o4-YvJ">
+                    <rect key="frame" x="56" y="25" width="536" height="84"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mpR-is-nNq" firstAttribute="top" secondItem="TxH-gu-8ej" secondAttribute="top" id="3Qk-b9-PvH"/>
+                <constraint firstItem="Ez2-o4-YvJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="6hB-7h-F53"/>
+                <constraint firstItem="mpR-is-nNq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="GDJ-6z-oyG"/>
+                <constraint firstAttribute="trailing" secondItem="Ez2-o4-YvJ" secondAttribute="trailing" constant="8" id="H8p-aw-g2M"/>
+                <constraint firstItem="5Fi-ts-yt0" firstAttribute="top" secondItem="Ez2-o4-YvJ" secondAttribute="bottom" constant="8" id="HXs-AA-fqJ"/>
+                <constraint firstAttribute="trailing" secondItem="Oez-YH-l2y" secondAttribute="trailing" constant="8" id="Kkq-QS-bnt"/>
+                <constraint firstAttribute="bottom" secondItem="5Fi-ts-yt0" secondAttribute="bottom" constant="8" id="Qfn-RS-k5g"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mpR-is-nNq" secondAttribute="bottom" constant="8" id="RCV-UA-4qJ"/>
+                <constraint firstItem="jWf-zF-Xno" firstAttribute="leading" secondItem="TxH-gu-8ej" secondAttribute="trailing" constant="9" id="VrH-oA-wJg"/>
+                <constraint firstItem="Oez-YH-l2y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="aIq-U5-N24"/>
+                <constraint firstItem="5Fi-ts-yt0" firstAttribute="leading" secondItem="Ez2-o4-YvJ" secondAttribute="leading" id="g4C-pn-zoe"/>
+                <constraint firstItem="jWf-zF-Xno" firstAttribute="top" secondItem="mpR-is-nNq" secondAttribute="top" id="l7E-Lq-PpL"/>
+                <constraint firstItem="TxH-gu-8ej" firstAttribute="leading" secondItem="mpR-is-nNq" secondAttribute="trailing" constant="8" id="onv-AW-51K"/>
+                <constraint firstItem="mpR-is-nNq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="piB-8B-rAT"/>
+                <constraint firstItem="5Fi-ts-yt0" firstAttribute="trailing" secondItem="Ez2-o4-YvJ" secondAttribute="trailing" id="wGm-AZ-F4G"/>
+                <constraint firstItem="Ez2-o4-YvJ" firstAttribute="leading" secondItem="mpR-is-nNq" secondAttribute="trailing" constant="8" id="zTF-8J-MLs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="Oez-YH-l2y" id="6yH-uw-NwX"/>
+                <outlet property="favouriteButton" destination="nsw-Xb-Ddh" id="J4c-4D-mg1"/>
+                <outlet property="favouriteCountLabel" destination="v8Z-oU-LRY" id="wPI-s4-Eim"/>
+                <outlet property="profilePic" destination="mpR-is-nNq" id="jg5-pk-Fkh"/>
+                <outlet property="retweetButton" destination="NjV-8V-7C7" id="Rba-HM-pA2"/>
+                <outlet property="retweetCountLabel" destination="xTE-B1-Iit" id="C45-Iu-y6r"/>
+                <outlet property="tweetLabel" destination="Ez2-o4-YvJ" id="Kyq-F8-Iak"/>
+                <outlet property="userHandle" destination="jWf-zF-Xno" id="1aG-zG-aHM"/>
+                <outlet property="userName" destination="TxH-gu-8ej" id="T7Y-zR-YaO"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="61"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="favorite_grey" width="64" height="64"/>
+        <image name="reply_grey" width="64" height="64"/>
+        <image name="retweet_grey" width="64" height="64"/>
+    </resources>
+</document>
