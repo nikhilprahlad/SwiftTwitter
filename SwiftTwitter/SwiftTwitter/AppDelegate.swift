@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         Fabric.with([Twitter()])
-        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         if let data = NSUserDefaults.standardUserDefaults().objectForKey("loggedInUser") as? NSData{
             Session.sharedSession.currentUser = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? User
@@ -26,8 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let menu = storyboard.instantiateViewControllerWithIdentifier("menuvc") as! MenuViewController
             let frontView = TimeLineViewController()
             
-            var rearnavController = UINavigationController(rootViewController: menu)
-            var frontnavController = UINavigationController(rootViewController: frontView)
+            let frontnavController = UINavigationController(rootViewController: frontView)
 
             let revealVC = SWRevealViewController(rearViewController: menu, frontViewController: frontnavController)
             

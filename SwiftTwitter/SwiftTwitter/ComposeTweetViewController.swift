@@ -40,7 +40,7 @@ class ComposeTweetViewController: UIViewController,UITextViewDelegate {
             }
         }
         composerTextView.becomeFirstResponder()
-        characterCountLabel.text = String(140 - count(composerTextView.text))
+        characterCountLabel.text = String(140 - composerTextView.text.characters.count)
         // Do any additional setup after loading the view.
     }
 
@@ -66,7 +66,7 @@ class ComposeTweetViewController: UIViewController,UITextViewDelegate {
 
     @IBAction func sendTweet(sender: UIBarButtonItem) {
         
-        var params = ["status":composerTextView.text]
+        let params = ["status":composerTextView.text]
         let url = "https://api.twitter.com/1.1/statuses/update.json"
         var clientError : NSError?
         
@@ -74,7 +74,7 @@ class ComposeTweetViewController: UIViewController,UITextViewDelegate {
         
         Twitter.sharedInstance().APIClient.sendTwitterRequest(request, completion: { (response, data, connectionError) -> Void in
             if(connectionError == nil){
-                print("Tweet Sent - \(response!)")
+                print("Tweet Sent - \(response!)", terminator: "")
             }
             self.dismissViewControllerAnimated(true, completion: nil)
         })
@@ -82,8 +82,8 @@ class ComposeTweetViewController: UIViewController,UITextViewDelegate {
     
     func textViewDidChange(textView: UITextView) {
         
-        characterCountLabel.text = String(140 - count(textView.text))
-        if count(textView.text) > 140{
+        characterCountLabel.text = String(140 - textView.text.characters.count)
+        if textView.text.characters.count > 140{
             characterCountLabel.textColor = UIColor.redColor()
         } else{
             characterCountLabel.textColor = UIColor.blackColor()

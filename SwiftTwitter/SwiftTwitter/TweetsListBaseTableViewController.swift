@@ -46,7 +46,7 @@ class TweetsListBaseTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var tableCell:TimeLineTableViewCell = tableView.dequeueReusableCellWithIdentifier("TweetCell", forIndexPath: indexPath) as! TimeLineTableViewCell
+        let tableCell:TimeLineTableViewCell = tableView.dequeueReusableCellWithIdentifier("TweetCell", forIndexPath: indexPath) as! TimeLineTableViewCell
         tableCell.tweet = tweets?[indexPath.row]
         if let topCOntroller = self.navigationController?.topViewController {
             if topCOntroller.isKindOfClass(MyTweetsViewController) {
@@ -71,7 +71,7 @@ class TweetsListBaseTableViewController: UITableViewController {
         }
         tableCell.replySelected = {
             let myStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-            var composeVC = myStoryBoard.instantiateViewControllerWithIdentifier("ctvc") as! ComposeTweetViewController
+            let composeVC = myStoryBoard.instantiateViewControllerWithIdentifier("ctvc") as! ComposeTweetViewController
             composeVC.respondingTweet = tableCell.tweet
             composeVC.tweetType = ComposeTweetViewController.tweetTypes.ResponseTweet
             self.navigationController?.presentViewController(composeVC, animated: true, completion: nil)

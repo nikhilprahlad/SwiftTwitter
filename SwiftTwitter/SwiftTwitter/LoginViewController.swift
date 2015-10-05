@@ -13,12 +13,13 @@ class LoginViewController: TWTRTimelineViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         let logInButton = TWTRLogInButton(logInCompletion: {
-            (session: TWTRSession!, error: NSError!) in
+            (session, error) in
             // play with Twitter session
             if((session) != nil && error == nil){
                 
-                var params = [String:String]()
+                let params = [String:String]()
                 let url = "https://api.twitter.com/1.1/account/verify_credentials.json"
                 var clientError : NSError?
                 
@@ -27,15 +28,22 @@ class LoginViewController: TWTRTimelineViewController {
                 Twitter.sharedInstance().APIClient.sendTwitterRequest(request, completion: { (response, data, connectionError) -> Void in
                     if(connectionError == nil){
                         
-                        var jsonError:NSError?
-                        let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: &jsonError)
+                        let json: AnyObject?
+                        do {
+                            json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
+                        } catch let error as NSError {
+                            print(error)
+                            json = nil
+                        } catch {
+                            fatalError()
+                        }
                         #if DEBUG
-                        print("Request - \(request)\n")
+                        print("Request - \(request)\n", terminator: "")
                         //println("Response - \(json)\n")
                         #endif
                         if let user = json as? NSDictionary{
                             
-                            var loggedInUser = User(dictionary: user)
+                            let loggedInUser = User(dictionary: user)
                             Session.sharedSession.currentUser = loggedInUser
                             let encodedObject = NSKeyedArchiver.archivedDataWithRootObject(loggedInUser)
                             NSUserDefaults.standardUserDefaults().setObject(encodedObject, forKey: "loggedInUser")
@@ -43,20 +51,20 @@ class LoginViewController: TWTRTimelineViewController {
                         }
                     }
                     else{
-                        print("Could not fetch user details")
+                        print("Could not fetch user details", terminator: "")
                     }
                 })
                 
                 
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isAuthenticated")
                 //self.performSegueWithIdentifier("xyz", sender: self)
-                var storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 
                 let menu = storyboard.instantiateViewControllerWithIdentifier("menuvc") as! MenuViewController
                 let frontView = TimeLineViewController()
                 
                 var rearnavController = UINavigationController(rootViewController: menu)
-                var frontnavController = UINavigationController(rootViewController: frontView)
+                let frontnavController = UINavigationController(rootViewController: frontView)
                 
                 let revealVC = SWRevealViewController(rearViewController: menu, frontViewController: frontnavController)
                 

@@ -40,7 +40,7 @@ class TimeLineViewController: TweetsListBaseTableViewController {
     func ComposeTweet(sender: UIBarButtonItem) {
         
         let myStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-        var composeVC = myStoryBoard.instantiateViewControllerWithIdentifier("ctvc") as! ComposeTweetViewController
+        let composeVC = myStoryBoard.instantiateViewControllerWithIdentifier("ctvc") as! ComposeTweetViewController
         composeVC.tweetType = ComposeTweetViewController.tweetTypes.NewTweet
         self.navigationController?.presentViewController(composeVC, animated: true, completion: nil)
     }

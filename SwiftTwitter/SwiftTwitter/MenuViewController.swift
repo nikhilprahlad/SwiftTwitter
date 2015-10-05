@@ -41,7 +41,7 @@ class MenuViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("menuCell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("menuCell", forIndexPath: indexPath) 
         switch indexPath.row{
             
         case 0:
@@ -64,20 +64,20 @@ class MenuViewController: UIViewController,UITableViewDataSource,UITableViewDele
         switch indexPath.row{
             
         case 0:
-            var timeLineVC = TimeLineViewController()
-            var navController = UINavigationController(rootViewController: timeLineVC)
+            let timeLineVC = TimeLineViewController()
+            let navController = UINavigationController(rootViewController: timeLineVC)
             self.revealViewController().pushFrontViewController(navController, animated: true)
         case 1:
-            var mentionsVC = MentionsViewController()
-            var navController = UINavigationController(rootViewController: mentionsVC)
+            let mentionsVC = MentionsViewController()
+            let navController = UINavigationController(rootViewController: mentionsVC)
             self.revealViewController().pushFrontViewController(navController, animated: true)
         case 2:
-            var myTweetsVC = MyTweetsViewController()
-            var navController = UINavigationController(rootViewController: myTweetsVC)
+            let myTweetsVC = MyTweetsViewController()
+            let navController = UINavigationController(rootViewController: myTweetsVC)
             self.revealViewController().pushFrontViewController(navController, animated: true)
         default:
             ServiceRequestManager.sharedInstance.logout()
-            var vc = self.storyboard!.instantiateInitialViewController() as! UIViewController
+            let vc = self.storyboard?.instantiateInitialViewController() as UIViewController!
             let window = UIApplication.sharedApplication().delegate!.window!
             window?.rootViewController = vc
             

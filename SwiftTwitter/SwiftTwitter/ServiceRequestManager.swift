@@ -48,7 +48,7 @@ class ServiceRequestManager: NSObject {
             
         else{
             
-            var params = [String:String]()
+            let params = [String:String]()
             let url = "https://api.twitter.com/1.1/statuses/retweet/\(selectedTweet.id!).json"
             var clientError : NSError?
             
@@ -68,7 +68,7 @@ class ServiceRequestManager: NSObject {
         }
     }
     
-    func fetchNewTweets(#count:Int, completion:(tweetsArray:Array<NSDictionary>)->()) {
+    func fetchNewTweets(count count:Int, completion:(tweetsArray:Array<NSDictionary>)->()) {
         
         let statusesShowEndpoint = "https://api.twitter.com/1.1/statuses/home_timeline.json"
         let params = ["count":"\(count)"]
@@ -80,9 +80,17 @@ class ServiceRequestManager: NSObject {
             if (connectionError == nil) {
                 
                 var jsonError : NSError?
-                let json : AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options: nil, error: &jsonError)
+                let json : AnyObject?
+                do {
+                    json = try NSJSONSerialization.JSONObjectWithData(data!, options: [])
+                } catch let error as NSError {
+                    jsonError = error
+                    json = nil
+                } catch {
+                    fatalError()
+                }
                 #if DEBUG
-                    print("Request - \(request)\n")
+                    print("Request - \(request)\n", terminator: "")
                     //println("Response - \(json)\n")
                 #endif
                 if let tweetsArray = json as? Array<NSDictionary>{
@@ -90,7 +98,7 @@ class ServiceRequestManager: NSObject {
                 }
             }
             else {
-                println("Error: \(connectionError)")
+                print("Error: \(connectionError)")
             }
         }
     }
@@ -98,7 +106,7 @@ class ServiceRequestManager: NSObject {
     
     func fetchTweetStatus(tweetID:String, completion:(fetchedTweet:Tweet?, error:NSError?)->()) {
         
-        var params = ["id":tweetID, "include_my_retweet":"true"]
+        let params = ["id":tweetID, "include_my_retweet":"true"]
         let url = "https://api.twitter.com/1.1/statuses/show.json?id=\(tweetID)"
         var clientError : NSError?
         
@@ -108,9 +116,17 @@ class ServiceRequestManager: NSObject {
             if(connectionError == nil){
                 
                 var jsonError:NSError?
-                let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: &jsonError)
+                let json: AnyObject?
+                do {
+                    json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
+                } catch let error as NSError {
+                    jsonError = error
+                    json = nil
+                } catch {
+                    fatalError()
+                }
                 #if DEBUG
-                    print("Request - \(request)\n")
+                    print("Request - \(request)\n", terminator: "")
                     //println("Response - \(json)\n")
                 #endif
                 if let retweetedTweetDict = json as? NSDictionary{
@@ -127,7 +143,7 @@ class ServiceRequestManager: NSObject {
     
     func destroyTweet(tweetID:String, completion:(fetchedTweet:Tweet?, error:NSError?)->()) {
         
-        var params = [String:String]()
+        let params = [String:String]()
         let url = "https://api.twitter.com/1.1/statuses/destroy/\(tweetID).json"
         var clientError : NSError?
         
@@ -137,14 +153,22 @@ class ServiceRequestManager: NSObject {
             if(connectionError == nil){
                 
                 var jsonError:NSError?
-                let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: &jsonError)
+                let json: AnyObject?
+                do {
+                    json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
+                } catch let error as NSError {
+                    jsonError = error
+                    json = nil
+                } catch {
+                    fatalError()
+                }
                 #if DEBUG
-                    print("Request - \(request)\n")
+                    print("Request - \(request)\n", terminator: "")
                     //println("Response - \(json)\n")
                 #endif
                 if let retweetedTweetDict = json as? NSDictionary{
                     
-                    var fetchedTweet = Tweet(dictionary: retweetedTweetDict)
+                    let fetchedTweet = Tweet(dictionary: retweetedTweetDict)
                     completion(fetchedTweet: fetchedTweet, error: nil)
                 }
             }
@@ -156,7 +180,7 @@ class ServiceRequestManager: NSObject {
     
     func destroyFavouritedTweet(tweetID:String, completion:(fetchedTweet:Tweet?, error:NSError?)->()){
         
-        var params = ["id":tweetID]
+        let params = ["id":tweetID]
         let url = "https://api.twitter.com/1.1/favorites/destroy.json?id=\(tweetID)"
         var clientError : NSError?
         
@@ -166,14 +190,22 @@ class ServiceRequestManager: NSObject {
             if(connectionError == nil){
                 
                 var jsonError:NSError?
-                let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: &jsonError)
+                let json: AnyObject?
+                do {
+                    json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
+                } catch let error as NSError {
+                    jsonError = error
+                    json = nil
+                } catch {
+                    fatalError()
+                }
                 #if DEBUG
-                    print("Request - \(request)\n")
+                    print("Request - \(request)\n", terminator: "")
                     //println("Response - \(json)\n")
                 #endif
                 if let favoritedTweet = json as? NSDictionary{
                     
-                    var fetchedTweet = Tweet(dictionary: favoritedTweet)
+                    let fetchedTweet = Tweet(dictionary: favoritedTweet)
                     completion(fetchedTweet: fetchedTweet, error: nil)
                 }
             }
@@ -202,7 +234,7 @@ class ServiceRequestManager: NSObject {
             
         else{
             
-            var params = ["id":selectedTweet.id!]
+            let params = ["id":selectedTweet.id!]
             let url = "https://api.twitter.com/1.1/favorites/create.json?id=\(selectedTweet.id!)"
             var clientError : NSError?
             
@@ -222,7 +254,7 @@ class ServiceRequestManager: NSObject {
         }
     }
     
-    func fetchMentions(#count:Int, completion:(mentionsArray:Array<NSDictionary>)->()){
+    func fetchMentions(count count:Int, completion:(mentionsArray:Array<NSDictionary>)->()){
         
         let statusesShowEndpoint = "https://api.twitter.com/1.1/statuses/mentions_timeline.json"
         let params = ["count":"\(count)"]
@@ -234,9 +266,17 @@ class ServiceRequestManager: NSObject {
             if (connectionError == nil) {
                 
                 var jsonError : NSError?
-                let json : AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options: nil, error: &jsonError)
+                let json : AnyObject?
+                do {
+                    json = try NSJSONSerialization.JSONObjectWithData(data!, options: [])
+                } catch let error as NSError {
+                    jsonError = error
+                    json = nil
+                } catch {
+                    fatalError()
+                }
                 #if DEBUG
-                    print("Request - \(request)\n")
+                    print("Request - \(request)\n", terminator: "")
                     //println("Response - \(json)\n")
                 #endif
                 if let tweetsArray = json as? Array<NSDictionary>{
@@ -244,12 +284,12 @@ class ServiceRequestManager: NSObject {
                 }
             }
             else {
-                println("Error: \(connectionError)")
+                print("Error: \(connectionError)")
             }
         }
     }
     
-    func fetchUserTweets(#userId:String, count:Int, completion:(mentionsArray:Array<NSDictionary>)->()){
+    func fetchUserTweets(userId userId:String, count:Int, completion:(mentionsArray:Array<NSDictionary>)->()){
         
         let statusesShowEndpoint = "https://api.twitter.com/1.1/statuses/user_timeline.json"
         let params = ["count":"\(count)"]
@@ -261,9 +301,17 @@ class ServiceRequestManager: NSObject {
             if (connectionError == nil) {
                 
                 var jsonError : NSError?
-                let json : AnyObject? = NSJSONSerialization.JSONObjectWithData(data!, options: nil, error: &jsonError)
+                let json : AnyObject?
+                do {
+                    json = try NSJSONSerialization.JSONObjectWithData(data!, options: [])
+                } catch let error as NSError {
+                    jsonError = error
+                    json = nil
+                } catch {
+                    fatalError()
+                }
                 #if DEBUG
-                    print("Request - \(request)\n")
+                    print("Request - \(request)\n", terminator: "")
                     //println("Response - \(json)\n")
                 #endif
                 if let tweetsArray = json as? Array<NSDictionary>{
@@ -271,7 +319,7 @@ class ServiceRequestManager: NSObject {
                 }
             }
             else {
-                println("Error: \(connectionError)")
+                print("Error: \(connectionError)")
             }
         }
     }

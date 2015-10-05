@@ -28,7 +28,7 @@ class User: NSObject, NSCoding {
         aCoder.encodeObject(self.name, forKey: "name")
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         
         self.screenName = aDecoder.decodeObjectForKey("screenName") as? String
         self.imageURL = aDecoder.decodeObjectForKey("imageURL") as? NSURL

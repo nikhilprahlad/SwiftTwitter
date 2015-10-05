@@ -356,6 +356,7 @@
 		00A8F4981B36520B0030FD3F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Nikhil Prahlad";
