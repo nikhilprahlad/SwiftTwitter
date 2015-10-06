@@ -49,26 +49,25 @@ class LoginViewController: TWTRTimelineViewController {
                             NSUserDefaults.standardUserDefaults().setObject(encodedObject, forKey: "loggedInUser")
                             NSUserDefaults.standardUserDefaults().synchronize()
                         }
+                        
+                        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isAuthenticated")
+                        
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        
+                        let menu = storyboard.instantiateViewControllerWithIdentifier("menuvc") as! MenuViewController
+                        let frontView = TimeLineViewController()
+                        
+                        let frontnavController = UINavigationController(rootViewController: frontView)
+                        
+                        let revealVC = SWRevealViewController(rearViewController: menu, frontViewController: frontnavController)
+                        
+                        self.presentViewController(revealVC, animated: true, completion: nil)
                     }
                     else{
                         print("Could not fetch user details", terminator: "")
                     }
                 })
                 
-                
-                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isAuthenticated")
-                //self.performSegueWithIdentifier("xyz", sender: self)
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                
-                let menu = storyboard.instantiateViewControllerWithIdentifier("menuvc") as! MenuViewController
-                let frontView = TimeLineViewController()
-                
-                var rearnavController = UINavigationController(rootViewController: menu)
-                let frontnavController = UINavigationController(rootViewController: frontView)
-                
-                let revealVC = SWRevealViewController(rearViewController: menu, frontViewController: frontnavController)
-                
-                self.presentViewController(revealVC, animated: true, completion: nil)
             }
             
         })

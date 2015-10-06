@@ -48,6 +48,7 @@ class TweetsListBaseTableViewController: UITableViewController {
         
         let tableCell:TimeLineTableViewCell = tableView.dequeueReusableCellWithIdentifier("TweetCell", forIndexPath: indexPath) as! TimeLineTableViewCell
         tableCell.tweet = tweets?[indexPath.row]
+        tableCell.contentView.userInteractionEnabled = false
         if let topCOntroller = self.navigationController?.topViewController {
             if topCOntroller.isKindOfClass(MyTweetsViewController) {
                 tableCell.retweetButton.userInteractionEnabled = false

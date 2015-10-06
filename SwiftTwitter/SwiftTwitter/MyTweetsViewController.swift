@@ -33,7 +33,7 @@ class MyTweetsViewController: TweetsListBaseTableViewController {
     func loadNewUserTweets() {
         
         if let currentUserId = Session.sharedSession.currentUser?.name {
-            ServiceRequestManager.sharedInstance.fetchUserTweets(userId: currentUserId, count: 10) { (tweetsArray) -> () in
+            ServiceRequestManager.sharedInstance.fetchUserTweets(userId: currentUserId, count: 50) { (tweetsArray) -> () in
                 
                 self.tweets = [Tweet]()
                 for tweetDict in tweetsArray{
