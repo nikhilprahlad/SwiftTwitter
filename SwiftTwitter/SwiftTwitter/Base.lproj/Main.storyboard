@@ -146,7 +146,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INg-EZ-BjG">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="TP3-pL-Y8K">
+                                    <navigationItem title="Compose" id="TP3-pL-Y8K">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="phs-Xg-fFX">
                                             <connections>
                                                 <action selector="cancelTapped:" destination="y6v-tj-gih" id="ZKd-aa-oho"/>
