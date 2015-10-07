@@ -26,7 +26,7 @@ class ComposeTweetViewController: UIViewController,UITextViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.title = "Compose"
         if let loggedinUser = Session.sharedSession.currentUser {
             if let imageUrl = loggedinUser.imageURL {
                 profileImageView.sd_setImageWithURL(imageUrl)

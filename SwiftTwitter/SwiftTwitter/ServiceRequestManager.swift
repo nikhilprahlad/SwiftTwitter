@@ -79,12 +79,11 @@ class ServiceRequestManager: NSObject {
         Twitter.sharedInstance().APIClient.sendTwitterRequest(request) { (response, data, connectionError) -> Void in
             if (connectionError == nil) {
                 
-                var jsonError : NSError?
                 let json : AnyObject?
                 do {
                     json = try NSJSONSerialization.JSONObjectWithData(data!, options: [])
                 } catch let error as NSError {
-                    jsonError = error
+                    print(error)
                     json = nil
                 } catch {
                     fatalError()
@@ -115,12 +114,11 @@ class ServiceRequestManager: NSObject {
         Twitter.sharedInstance().APIClient.sendTwitterRequest(request, completion: { (response, data, connectionError) -> Void in
             if(connectionError == nil){
                 
-                var jsonError:NSError?
                 let json: AnyObject?
                 do {
                     json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
                 } catch let error as NSError {
-                    jsonError = error
+                    print(error)
                     json = nil
                 } catch {
                     fatalError()
@@ -152,12 +150,11 @@ class ServiceRequestManager: NSObject {
         Twitter.sharedInstance().APIClient.sendTwitterRequest(request, completion: { (response, data, connectionError) -> Void in
             if(connectionError == nil){
                 
-                var jsonError:NSError?
                 let json: AnyObject?
                 do {
                     json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
                 } catch let error as NSError {
-                    jsonError = error
+                    print(error)
                     json = nil
                 } catch {
                     fatalError()
@@ -189,12 +186,11 @@ class ServiceRequestManager: NSObject {
         Twitter.sharedInstance().APIClient.sendTwitterRequest(request, completion: { (response, data, connectionError) -> Void in
             if(connectionError == nil){
                 
-                var jsonError:NSError?
                 let json: AnyObject?
                 do {
                     json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
                 } catch let error as NSError {
-                    jsonError = error
+                    print(error)
                     json = nil
                 } catch {
                     fatalError()
@@ -265,12 +261,11 @@ class ServiceRequestManager: NSObject {
         Twitter.sharedInstance().APIClient.sendTwitterRequest(request) { (response, data, connectionError) -> Void in
             if (connectionError == nil) {
                 
-                var jsonError : NSError?
                 let json : AnyObject?
                 do {
                     json = try NSJSONSerialization.JSONObjectWithData(data!, options: [])
                 } catch let error as NSError {
-                    jsonError = error
+                    print(error)
                     json = nil
                 } catch {
                     fatalError()
@@ -300,12 +295,11 @@ class ServiceRequestManager: NSObject {
         Twitter.sharedInstance().APIClient.sendTwitterRequest(request) { (response, data, connectionError) -> Void in
             if (connectionError == nil) {
                 
-                var jsonError : NSError?
                 let json : AnyObject?
                 do {
                     json = try NSJSONSerialization.JSONObjectWithData(data!, options: [])
                 } catch let error as NSError {
-                    jsonError = error
+                    print(error)
                     json = nil
                 } catch {
                     fatalError()

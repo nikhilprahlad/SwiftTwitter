@@ -53,14 +53,10 @@ class LoginViewController: TWTRTimelineViewController {
                         NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isAuthenticated")
                         
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                        
                         let menu = storyboard.instantiateViewControllerWithIdentifier("menuvc") as! MenuViewController
                         let frontView = TimeLineViewController()
-                        
                         let frontnavController = UINavigationController(rootViewController: frontView)
-                        
                         let revealVC = SWRevealViewController(rearViewController: menu, frontViewController: frontnavController)
-                        
                         self.presentViewController(revealVC, animated: true, completion: nil)
                     }
                     else{
