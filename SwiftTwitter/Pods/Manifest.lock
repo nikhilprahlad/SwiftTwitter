@@ -1,0 +1,15 @@
+PODS:
+  - SDWebImage (3.7.4):
+    - SDWebImage/Core (= 3.7.4)
+  - SDWebImage/Core (3.7.4)
+  - SWRevealViewController (2.3.0)
+
+DEPENDENCIES:
+  - SDWebImage (~> 3.7)
+  - SWRevealViewController (~> 2.3.0)
+
+SPEC CHECKSUMS:
+  SDWebImage: 247edd7dd80dd6124197b0d6a17846fe9d1df968
+  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
+
+COCOAPODS: 0.38.2

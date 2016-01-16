@@ -16,22 +16,6 @@
 		00A428F81B5CCADA0063C7D9 /* ComposeTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A428F71B5CCADA0063C7D9 /* ComposeTweetViewController.swift */; };
 		00A5A3561B83093E00E9A45A /* TweetsListBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A3541B83093E00E9A45A /* TweetsListBaseTableViewController.swift */; };
 		00A5A3571B83093E00E9A45A /* TweetsListBaseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A5A3551B83093E00E9A45A /* TweetsListBaseTableViewController.xib */; };
-		00A5A37F1B83C29800E9A45A /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A35F1B83C29800E9A45A /* MKAnnotationView+WebCache.m */; };
-		00A5A3801B83C29800E9A45A /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A3611B83C29800E9A45A /* NSData+ImageContentType.m */; };
-		00A5A3811B83C29800E9A45A /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A3631B83C29800E9A45A /* SDImageCache.m */; };
-		00A5A3821B83C29800E9A45A /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A3651B83C29800E9A45A /* SDWebImageCompat.m */; };
-		00A5A3831B83C29800E9A45A /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A3671B83C29800E9A45A /* SDWebImageDecoder.m */; };
-		00A5A3841B83C29800E9A45A /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A3691B83C29800E9A45A /* SDWebImageDownloader.m */; };
-		00A5A3851B83C29800E9A45A /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A36B1B83C29800E9A45A /* SDWebImageDownloaderOperation.m */; };
-		00A5A3861B83C29800E9A45A /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A36D1B83C29800E9A45A /* SDWebImageManager.m */; };
-		00A5A3871B83C29800E9A45A /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A3701B83C29800E9A45A /* SDWebImagePrefetcher.m */; };
-		00A5A3881B83C29800E9A45A /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A3721B83C29800E9A45A /* UIButton+WebCache.m */; };
-		00A5A3891B83C29800E9A45A /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A3741B83C29800E9A45A /* UIImage+GIF.m */; };
-		00A5A38A1B83C29800E9A45A /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A3761B83C29800E9A45A /* UIImage+MultiFormat.m */; };
-		00A5A38B1B83C29800E9A45A /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A3781B83C29800E9A45A /* UIImage+WebP.m */; };
-		00A5A38C1B83C29800E9A45A /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A37A1B83C29800E9A45A /* UIImageView+HighlightedWebCache.m */; };
-		00A5A38D1B83C29800E9A45A /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A37C1B83C29800E9A45A /* UIImageView+WebCache.m */; };
-		00A5A38E1B83C29800E9A45A /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A5A37E1B83C29800E9A45A /* UIView+WebCacheOperation.m */; };
 		00A8F4A61B36520B0030FD3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A8F4A51B36520B0030FD3F /* AppDelegate.swift */; };
 		00A8F4A81B36520B0030FD3F /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A8F4A71B36520B0030FD3F /* TimeLineViewController.swift */; };
 		00A8F4AB1B36520B0030FD3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A8F4A91B36520B0030FD3F /* Main.storyboard */; };
@@ -46,7 +30,7 @@
 		00F752461B3911FC00E2EAC3 /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F752451B3911FC00E2EAC3 /* TimeLineTableViewCell.swift */; };
 		00F7524A1B3A74FD00E2EAC3 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F752491B3A74FD00E2EAC3 /* Tweet.swift */; };
 		00F7524C1B3A760A00E2EAC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7524B1B3A760A00E2EAC3 /* User.swift */; };
-		00FE107B1B46052A001D4857 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE107A1B46052A001D4857 /* SWRevealViewController.m */; };
+		3738B87832DDE12D09D7168F /* libPods-SwiftTwitter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC5DAA738392CEF1E3801E4 /* libPods-SwiftTwitter.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,39 +53,6 @@
 		00A428F71B5CCADA0063C7D9 /* ComposeTweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTweetViewController.swift; sourceTree = "<group>"; };
 		00A5A3541B83093E00E9A45A /* TweetsListBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsListBaseTableViewController.swift; sourceTree = "<group>"; };
 		00A5A3551B83093E00E9A45A /* TweetsListBaseTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetsListBaseTableViewController.xib; sourceTree = "<group>"; };
-		00A5A35E1B83C29800E9A45A /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
-		00A5A35F1B83C29800E9A45A /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
-		00A5A3601B83C29800E9A45A /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
-		00A5A3611B83C29800E9A45A /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
-		00A5A3621B83C29800E9A45A /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
-		00A5A3631B83C29800E9A45A /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
-		00A5A3641B83C29800E9A45A /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
-		00A5A3651B83C29800E9A45A /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
-		00A5A3661B83C29800E9A45A /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
-		00A5A3671B83C29800E9A45A /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
-		00A5A3681B83C29800E9A45A /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
-		00A5A3691B83C29800E9A45A /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
-		00A5A36A1B83C29800E9A45A /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
-		00A5A36B1B83C29800E9A45A /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
-		00A5A36C1B83C29800E9A45A /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
-		00A5A36D1B83C29800E9A45A /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
-		00A5A36E1B83C29800E9A45A /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
-		00A5A36F1B83C29800E9A45A /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
-		00A5A3701B83C29800E9A45A /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
-		00A5A3711B83C29800E9A45A /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
-		00A5A3721B83C29800E9A45A /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
-		00A5A3731B83C29800E9A45A /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
-		00A5A3741B83C29800E9A45A /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
-		00A5A3751B83C29800E9A45A /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
-		00A5A3761B83C29800E9A45A /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
-		00A5A3771B83C29800E9A45A /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
-		00A5A3781B83C29800E9A45A /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
-		00A5A3791B83C29800E9A45A /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
-		00A5A37A1B83C29800E9A45A /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
-		00A5A37B1B83C29800E9A45A /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
-		00A5A37C1B83C29800E9A45A /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
-		00A5A37D1B83C29800E9A45A /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
-		00A5A37E1B83C29800E9A45A /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		00A8F4A01B36520B0030FD3F /* SwiftTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A8F4A41B36520B0030FD3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00A8F4A51B36520B0030FD3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,8 +72,9 @@
 		00F752491B3A74FD00E2EAC3 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		00F7524B1B3A760A00E2EAC3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		00FE10781B460529001D4857 /* SwiftTwitter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftTwitter-Bridging-Header.h"; sourceTree = "<group>"; };
-		00FE10791B46052A001D4857 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		00FE107A1B46052A001D4857 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		43E7FD821CFB5DB97C9C0A3A /* Pods-SwiftTwitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTwitter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTwitter/Pods-SwiftTwitter.release.xcconfig"; sourceTree = "<group>"; };
+		8AC5DAA738392CEF1E3801E4 /* libPods-SwiftTwitter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftTwitter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8B3FD682E04634A05E82E94 /* Pods-SwiftTwitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTwitter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftTwitter/Pods-SwiftTwitter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +85,7 @@
 				00A8F4CC1B37462A0030FD3F /* Fabric.framework in Frameworks */,
 				00A8F4CF1B37462A0030FD3F /* TwitterCore.framework in Frameworks */,
 				00A8F4CD1B37462A0030FD3F /* TwitterKit.framework in Frameworks */,
+				3738B87832DDE12D09D7168F /* libPods-SwiftTwitter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,52 +107,14 @@
 			name = Manager;
 			sourceTree = "<group>";
 		};
-		00A5A35D1B83C25F00E9A45A /* SDWebImage */ = {
-			isa = PBXGroup;
-			children = (
-				00A5A35E1B83C29800E9A45A /* MKAnnotationView+WebCache.h */,
-				00A5A35F1B83C29800E9A45A /* MKAnnotationView+WebCache.m */,
-				00A5A3601B83C29800E9A45A /* NSData+ImageContentType.h */,
-				00A5A3611B83C29800E9A45A /* NSData+ImageContentType.m */,
-				00A5A3621B83C29800E9A45A /* SDImageCache.h */,
-				00A5A3631B83C29800E9A45A /* SDImageCache.m */,
-				00A5A3641B83C29800E9A45A /* SDWebImageCompat.h */,
-				00A5A3651B83C29800E9A45A /* SDWebImageCompat.m */,
-				00A5A3661B83C29800E9A45A /* SDWebImageDecoder.h */,
-				00A5A3671B83C29800E9A45A /* SDWebImageDecoder.m */,
-				00A5A3681B83C29800E9A45A /* SDWebImageDownloader.h */,
-				00A5A3691B83C29800E9A45A /* SDWebImageDownloader.m */,
-				00A5A36A1B83C29800E9A45A /* SDWebImageDownloaderOperation.h */,
-				00A5A36B1B83C29800E9A45A /* SDWebImageDownloaderOperation.m */,
-				00A5A36C1B83C29800E9A45A /* SDWebImageManager.h */,
-				00A5A36D1B83C29800E9A45A /* SDWebImageManager.m */,
-				00A5A36E1B83C29800E9A45A /* SDWebImageOperation.h */,
-				00A5A36F1B83C29800E9A45A /* SDWebImagePrefetcher.h */,
-				00A5A3701B83C29800E9A45A /* SDWebImagePrefetcher.m */,
-				00A5A3711B83C29800E9A45A /* UIButton+WebCache.h */,
-				00A5A3721B83C29800E9A45A /* UIButton+WebCache.m */,
-				00A5A3731B83C29800E9A45A /* UIImage+GIF.h */,
-				00A5A3741B83C29800E9A45A /* UIImage+GIF.m */,
-				00A5A3751B83C29800E9A45A /* UIImage+MultiFormat.h */,
-				00A5A3761B83C29800E9A45A /* UIImage+MultiFormat.m */,
-				00A5A3771B83C29800E9A45A /* UIImage+WebP.h */,
-				00A5A3781B83C29800E9A45A /* UIImage+WebP.m */,
-				00A5A3791B83C29800E9A45A /* UIImageView+HighlightedWebCache.h */,
-				00A5A37A1B83C29800E9A45A /* UIImageView+HighlightedWebCache.m */,
-				00A5A37B1B83C29800E9A45A /* UIImageView+WebCache.h */,
-				00A5A37C1B83C29800E9A45A /* UIImageView+WebCache.m */,
-				00A5A37D1B83C29800E9A45A /* UIView+WebCacheOperation.h */,
-				00A5A37E1B83C29800E9A45A /* UIView+WebCacheOperation.m */,
-			);
-			name = SDWebImage;
-			sourceTree = "<group>";
-		};
 		00A8F4971B36520B0030FD3F = {
 			isa = PBXGroup;
 			children = (
 				00A8F4A21B36520B0030FD3F /* SwiftTwitter */,
 				00A8F4B81B36520B0030FD3F /* SwiftTwitterTests */,
 				00A8F4A11B36520B0030FD3F /* Products */,
+				3C0544D971988D86C5AE86F3 /* Pods */,
+				9835FB4C83C19325BC5A049A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,23 +207,29 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		00FE10761B4604E9001D4857 /* SWRevealViewController */ = {
-			isa = PBXGroup;
-			children = (
-				00FE10791B46052A001D4857 /* SWRevealViewController.h */,
-				00FE107A1B46052A001D4857 /* SWRevealViewController.m */,
-			);
-			name = SWRevealViewController;
-			sourceTree = "<group>";
-		};
 		00FE10771B4604FA001D4857 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
 				00FE10781B460529001D4857 /* SwiftTwitter-Bridging-Header.h */,
-				00A5A35D1B83C25F00E9A45A /* SDWebImage */,
-				00FE10761B4604E9001D4857 /* SWRevealViewController */,
 			);
 			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		3C0544D971988D86C5AE86F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8B3FD682E04634A05E82E94 /* Pods-SwiftTwitter.debug.xcconfig */,
+				43E7FD821CFB5DB97C9C0A3A /* Pods-SwiftTwitter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9835FB4C83C19325BC5A049A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AC5DAA738392CEF1E3801E4 /* libPods-SwiftTwitter.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,10 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00A8F4BF1B36520B0030FD3F /* Build configuration list for PBXNativeTarget "SwiftTwitter" */;
 			buildPhases = (
+				41BBF69E5A931D2F10A83CDC /* Check Pods Manifest.lock */,
 				00A8F49C1B36520B0030FD3F /* Sources */,
 				00A8F49D1B36520B0030FD3F /* Frameworks */,
 				00A8F49E1B36520B0030FD3F /* Resources */,
 				00A8F4C71B3745030030FD3F /* ShellScript */,
+				691D7B385337F19FB5F41C39 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -426,6 +349,36 @@
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run 0866aaad01da96180c452d15de409a330180eea3 6a90fbe815e6c5c1224d1848ff7278aa331ae4c1ee155ea8c059d8dbb82798c4";
 		};
+		41BBF69E5A931D2F10A83CDC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		691D7B385337F19FB5F41C39 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftTwitter/Pods-SwiftTwitter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -433,35 +386,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A5A38A1B83C29800E9A45A /* UIImage+MultiFormat.m in Sources */,
-				00A5A38B1B83C29800E9A45A /* UIImage+WebP.m in Sources */,
 				00A5A3561B83093E00E9A45A /* TweetsListBaseTableViewController.swift in Sources */,
-				00A5A3861B83C29800E9A45A /* SDWebImageManager.m in Sources */,
 				00A428F81B5CCADA0063C7D9 /* ComposeTweetViewController.swift in Sources */,
 				0096891F1B716E31007F013A /* MyTweetsViewController.swift in Sources */,
-				00FE107B1B46052A001D4857 /* SWRevealViewController.m in Sources */,
-				00A5A3841B83C29800E9A45A /* SDWebImageDownloader.m in Sources */,
 				00F752461B3911FC00E2EAC3 /* TimeLineTableViewCell.swift in Sources */,
 				00F7524A1B3A74FD00E2EAC3 /* Tweet.swift in Sources */,
 				0096891B1B6F41D7007F013A /* MentionsViewController.swift in Sources */,
 				00F7524C1B3A760A00E2EAC3 /* User.swift in Sources */,
-				00A5A37F1B83C29800E9A45A /* MKAnnotationView+WebCache.m in Sources */,
 				00A8F4D11B3747750030FD3F /* LoginViewController.swift in Sources */,
-				00A5A3801B83C29800E9A45A /* NSData+ImageContentType.m in Sources */,
-				00A5A3891B83C29800E9A45A /* UIImage+GIF.m in Sources */,
-				00A5A3881B83C29800E9A45A /* UIButton+WebCache.m in Sources */,
 				009689111B6C1A69007F013A /* Session.swift in Sources */,
-				00A5A3871B83C29800E9A45A /* SDWebImagePrefetcher.m in Sources */,
-				00A5A3831B83C29800E9A45A /* SDWebImageDecoder.m in Sources */,
-				00A5A3811B83C29800E9A45A /* SDImageCache.m in Sources */,
-				00A5A3821B83C29800E9A45A /* SDWebImageCompat.m in Sources */,
-				00A5A38E1B83C29800E9A45A /* UIView+WebCacheOperation.m in Sources */,
 				00A8F4A81B36520B0030FD3F /* TimeLineViewController.swift in Sources */,
 				00A8F4A61B36520B0030FD3F /* AppDelegate.swift in Sources */,
-				00A5A3851B83C29800E9A45A /* SDWebImageDownloaderOperation.m in Sources */,
 				0050F8F81B4BA7FB00E8B900 /* MenuViewController.swift in Sources */,
-				00A5A38D1B83C29800E9A45A /* UIImageView+WebCache.m in Sources */,
-				00A5A38C1B83C29800E9A45A /* UIImageView+HighlightedWebCache.m in Sources */,
 				009689151B6F040E007F013A /* ServiceRequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +526,7 @@
 		};
 		00A8F4C01B36520B0030FD3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8B3FD682E04634A05E82E94 /* Pods-SwiftTwitter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -609,6 +546,7 @@
 		};
 		00A8F4C11B36520B0030FD3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43E7FD821CFB5DB97C9C0A3A /* Pods-SwiftTwitter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
